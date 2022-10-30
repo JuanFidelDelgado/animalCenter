@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context=".view.ui.activities.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="259dp"
+        android:layout_height="244dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="430dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="120dp"
+        app:backgroundTint="@color/color3"
+        android:textStyle="bold"
+        android:text="Ingresar"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:background="@drawable/btnborderstyle"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="120dp"
+        app:backgroundTint="@color/color3"
+        android:textStyle="bold"
+        android:text="Registrarse"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:background="@drawable/btnborderstyle"
+        />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="331dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="330dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/txtcontraseña"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="252dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="contraseña"
+        android:fontFamily="@font/playfairdisplayregular"
+        />
+
+    <TextView
+        android:id="@+id/btnRecuperar"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:text="Recuperar contraseña"
+        android:textAlignment="center" />
+</RelativeLayout>
