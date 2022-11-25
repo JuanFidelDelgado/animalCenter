@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_inicio"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.animalcenter.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mascotasFragment"
+            app:destination="@id/mascotasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_citasFragment"
+            app:destination="@id/citasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapasFragment"
+            app:destination="@id/mapasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.animalcenter.view.ui.fragments.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_mapasFragment"
+            app:destination="@id/mapasFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/mascotasFragment"
+        android:name="com.example.animalcenter.view.ui.fragments.MascotasFragment"
+        android:label="mascotasFragment" >
+        <action
+            android:id="@+id/action_mascotasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mascotasFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_mascotasFragment_to_mapasFragment"
+            app:destination="@id/mapasFragment" />
+        <action
+            android:id="@+id/action_mascotasFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_mascotasFragment_to_adicionarMascotaFragment"
+            app:destination="@id/adicionarMascotaFragment" />
+        <action
+            android:id="@+id/action_mascotasFragment_to_registrarMascotaActivity"
+            app:destination="@id/registrarMascotaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/citasFragment"
+        android:name="com.example.animalcenter.view.ui.fragments.citasFragment"
+        android:label="citasFragment" >
+        <action
+            android:id="@+id/action_citasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_citasFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_citasFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_citasFragment_to_mapasFragment"
+            app:destination="@id/mapasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapasFragment"
+        android:name="com.example.animalcenter.view.ui.fragments.mapasFragment"
+        android:label="mapasFragment" >
+        <action
+            android:id="@+id/action_mapasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mapasFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mapasFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_mapasFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.animalcenter.view.ui.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/adicionarMascotaFragment"
+        android:name="com.example.animalcenter.view.ui.fragments.AdicionarMascotaFragment"
+        android:label="fragment_adicionar_mascota"
+        tools:layout="@layout/fragment_adicionar_mascota" >
+        <action
+            android:id="@+id/action_adicionarMascotaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_adicionarMascotaFragment_to_mapasFragment"
+            app:destination="@id/mapasFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/registrarMascotaActivity"
+        android:name="com.example.animalcenter.view.ui.activities.RegistrarMascotaActivity"
+        android:label="activity_registrar_mascota"
+        tools:layout="@layout/activity_registrar_mascota" />
+</navigation>

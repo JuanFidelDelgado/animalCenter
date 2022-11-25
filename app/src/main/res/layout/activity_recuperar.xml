@@ -4,23 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color1"
+    android:background="@drawable/backgroundsintr"
     tools:context=".view.ui.activities.RecuperarActivity">
 
     <ImageView
         android:id="@+id/imageLogo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="610dp"
+        app:srcCompat="@drawable/logoanimalcenternombre" />
+
+
+    <TextView
+        android:id="@+id/lblTituloRecuperar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="480dp"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:text="Recuperar contraseña"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtEmailRecuperar"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="611dp"
-        app:srcCompat="@drawable/logoanimalcenternombre" />
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="410dp"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:background="@color/color1"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:hint="Email">
+    </EditText>
 
-    <EditText
-        android:id="@+id/txtEmail"
+
+<!--
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmailRegistro"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="271dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -31,12 +61,20 @@
         android:layout_marginBottom="410dp"
         android:ems="10"
         android:fontFamily="@font/playfairdisplayregular"
-        android:hint="email"
-        android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:background="@color/color1"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:hint="Email">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtConfirmarEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="271dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -47,10 +85,17 @@
         android:layout_marginBottom="350dp"
         android:ems="10"
         android:fontFamily="@font/playfairdisplayregular"
-        android:hint="Confirmar email"
-        android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:background="@color/color1"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:hint="Confirmar email">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+-->
     <Button
         android:id="@+id/btnRecuperar"
         android:layout_width="195dp"
@@ -65,6 +110,9 @@
         android:fontFamily="@font/playfairdisplayregular"
         android:text="Enviar"
         android:textStyle="bold"
-        app:backgroundTint="@color/color3" />
+        app:backgroundTint="@color/color1"
+        android:textColor="@color/color3"/>
+
+
 
 </RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundsintr"
+    tools:context=".view.ui.activities.RegistrarMascotaActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="610dp"
+        app:srcCompat="@drawable/logoanimalcenternombre" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:text="Registrar mascota"
+        android:textAlignment="center"
+        android:textColor="@color/color3"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"></EditText>
+
+    <EditText
+        android:id="@+id/txtNombreMascotaRegistro"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="  Nombre"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtEspecieRegistro"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="360dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="  Especie"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtRazaRegistro"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="420dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="  Raza"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtFechaNacimientoRegistro"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="480dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="  Edad"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnRegistrarMascota"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btnborderstyle"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:text="Registrar mascota"
+        android:textColor="@color/color3"
+        android:textStyle="bold"
+        app:backgroundTint="@color/color1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaNacimientoRegistro"
+        tools:ignore="MissingConstraints"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

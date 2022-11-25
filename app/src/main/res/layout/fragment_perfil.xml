@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundsintr"
+    tools:context=".view.ui.fragments.PerfilFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/logoanimalcenternombre"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mi perfil"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/color3"
+        >
+    </TextView>
+<!--
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewmas"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginTop="250dp">
+    </androidx.recyclerview.widget.RecyclerView>
+-->
+    <ImageView
+        android:id="@+id/fotoPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/camara"
+        android:layout_marginTop="200dp"
+        >
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/btnborderstyle"
+        android:backgroundTint="@color/color3"
+        android:text="Cámara"
+        android:textColor="@color/white"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/btnGaleria"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/btnborderstyle"
+        android:backgroundTint="@color/color3"
+        android:text="Galería"
+        android:textStyle="bold"></Button>
+
+    <EditText
+        android:id="@+id/txtNombresRegistro"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="410dp"
+        android:hint="Nombres"
+        android:textIsSelectable="false"
+        android:background="@color/color1">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btnEditarNombres"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="340dp"
+        android:background="@drawable/btnborderstyle"
+        android:src="@drawable/ic_edit">
+    </ImageButton>
+
+    <EditText
+        android:id="@+id/txtApellidosRegistro"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="460dp"
+        android:hint="Apellidos"
+        android:textIsSelectable="false"
+        android:background="@color/color1">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btnEditarApellidos"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="340dp"
+        android:background="@drawable/btnborderstyle"
+        android:src="@drawable/ic_edit">
+    </ImageButton>
+
+    <EditText
+        android:id="@+id/txtCelularRegistro"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="510dp"
+        android:hint="Celular"
+        android:textIsSelectable="false"
+        android:background="@color/color1">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btnEditarCelular"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="340dp"
+        android:background="@drawable/btnborderstyle"
+        android:src="@drawable/ic_edit">
+    </ImageButton>
+
+    <EditText
+        android:id="@+id/txtDireccionRegistro"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="560dp"
+        android:hint="Dirección"
+        android:textIsSelectable="false"
+        android:background="@color/color1">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btnEditarDireccion"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="340dp"
+        android:background="@drawable/btnborderstyle"
+        android:src="@drawable/ic_edit">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/btnActualizarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/color3"
+        android:background="@drawable/btnborderstyle"
+        android:text="Actualizar datos"
+        android:textStyle="bold"></Button>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp"
+        android:background="@color/color3"
+        android:backgroundTint="@color/color2"
+        app:menu="@menu/menu_navigation_bar">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "595917348314",
+    "project_id": "animalcenter-bba8e",
+    "storage_bucket": "animalcenter-bba8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595917348314:android:7f4eca8a32fbb28762b4e3",
+        "android_client_info": {
+          "package_name": "com.example.animalcenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595917348314-avpm8mc7tr0ttne4u65oviglkov79hb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgq9ou3C18VzUiiQwaLnO5oLSHYxl6mwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595917348314-avpm8mc7tr0ttne4u65oviglkov79hb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
