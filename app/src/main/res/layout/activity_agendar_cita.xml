@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundsintr"
-    tools:context=".view.ui.activities.RegistrarMascotaActivity">
+    tools:context=".view.ui.activities.AgendarCitaActivity">
 
     <ImageView
         android:id="@+id/imageLogo"
@@ -16,11 +16,12 @@
         app:srcCompat="@drawable/logoanimalcenternombre" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/playfairdisplayregular"
-        android:text="Registrar mascota"
+        android:text="Agendar cita"
         android:textAlignment="center"
         android:textColor="@color/color3"
         android:textSize="48dp"
@@ -28,25 +29,26 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp"></TextView>
 
-    <EditText
-        android:id="@+id/txtNombreMascotaRegistro"
+    <TextView
+        android:id="@+id/txtPaciente"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
         android:layout_height="50dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="200dp"
         android:background="@color/color1"
         android:ems="10"
         android:fontFamily="@font/playfairdisplayregular"
-        android:hint="Nombre"
+        android:hint="Paciente"
         app:boxCornerRadiusBottomEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageLogo"
-        tools:ignore="MissingConstraints">
-    </EditText>
+        tools:ignore="MissingConstraints"></TextView>
 
+
+    <!--
     <EditText
-        android:id="@+id/txtEspecieRegistro"
+        android:id="@+id/txtApellidosRegistro"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
         android:layout_height="50dp"
@@ -54,7 +56,7 @@
         android:background="@color/color1"
         android:ems="10"
         android:fontFamily="@font/playfairdisplayregular"
-        android:hint="Especie"
+        android:hint="  Apellidos"
         app:boxCornerRadiusBottomEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +65,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/txtRazaRegistro"
+        android:id="@+id/txtCelularRegistro"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
         android:layout_height="50dp"
@@ -71,7 +73,7 @@
         android:background="@color/color1"
         android:ems="10"
         android:fontFamily="@font/playfairdisplayregular"
-        android:hint="Raza"
+        android:hint="  Celular"
         app:boxCornerRadiusBottomEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +82,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/txtEdadRegistro"
+        android:id="@+id/txtEmailRegistro"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
         android:layout_height="50dp"
@@ -88,7 +90,7 @@
         android:background="@color/color1"
         android:ems="10"
         android:fontFamily="@font/playfairdisplayregular"
-        android:hint="Edad"
+        android:hint="  Email"
         app:boxCornerRadiusBottomEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,8 +98,70 @@
         tools:ignore="MissingConstraints">
     </EditText>
 
+    <EditText
+        android:id="@+id/txtDireccionRegistro"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="540dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="  Dirección"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtContrasenaRegistro"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="600dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="  Contraseña"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        app:endIconMode="password_toggle"
+        tools:ignore="MissingConstraints">
+    </EditText>
+-->
+
+    <EditText
+        android:id="@+id/txtFechaCita"
+        android:text="Fecha cita"
+        android:layout_width="200dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPaciente"
+        android:background="@color/color1"/>
+
+    <EditText
+        android:id="@+id/txtHoraCita"
+        android:text="Hora Cita"
+        android:layout_width="170dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPaciente"
+        android:background="@color/color1"/>
+
     <Button
-        android:id="@+id/btnRegistrarMascota"
+        android:id="@+id/btnAgendarCita"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -105,14 +169,14 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/btnborderstyle"
         android:fontFamily="@font/playfairdisplayregular"
-        android:text="Registrar mascota"
+        android:text="Agendar"
         android:textColor="@color/color3"
         android:textStyle="bold"
         app:backgroundTint="@color/color1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHoraCita"
         tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

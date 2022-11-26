@@ -26,6 +26,7 @@ class MascotasFragment : Fragment(), OnMascotasItemClickListener {
     lateinit var firebaseAuth: FirebaseAuth
     lateinit var adapter: MascotasAdapter
     lateinit var btnAdicionarMascota: Button
+    lateinit var btnAgendarCita: Button
     val database: FirebaseFirestore= FirebaseFirestore.getInstance()
     private val viewModel by lazy {ViewModelProvider(this).get(mascotasViewModel::class.java)}
 
@@ -71,7 +72,13 @@ class MascotasFragment : Fragment(), OnMascotasItemClickListener {
         btnAdicionarMascota.setOnClickListener {
             findNavController().navigate(R.id.action_mascotasFragment_to_registrarMascotaActivity)
         }
+
+        btnAgendarCita= view.findViewById(R.id.btnAgendarCita)
+        btnAgendarCita.setOnClickListener {
+            findNavController().navigate(R.id.action_mascotasFragment_to_agendarCitaActivity)
+        }
     }
+
 
     override fun onItemClick(mascotas: mascotas, position: Int) {
         val edad:String=mascotas.edad
@@ -80,8 +87,8 @@ class MascotasFragment : Fragment(), OnMascotasItemClickListener {
             "edad" to edad,
             "nombre" to nombre
         )
-        database.collection("consultas")
-            .document(nombre)
+        database.collection("citas")
+            .document()
             .set(dato)
             .addOnSuccessListener {
                 Toast.makeText(context, "Paciente enviado a consulta", Toast.LENGTH_SHORT).show()

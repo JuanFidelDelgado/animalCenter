@@ -66,6 +66,7 @@
             android:textSize="20dp"
             >
         </TextView>
+
         <TextView
             android:id="@+id/edad"
             android:layout_width="wrap_content"
@@ -81,18 +82,17 @@
             >
         </TextView>
 
-        <ImageButton
-            android:id="@+id/btnCitas"
-            android:layout_width="60dp"
+        <TextView
+            android:id="@+id/btnCita"
+            android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_marginLeft="80dp"
             android:layout_toRightOf="@id/nombre"
+            android:layout_marginTop="35dp"
             android:background="@color/color3"
             android:src="@drawable/ic_cita"
-
-            android:text="Ver citas"></ImageButton>
+            android:text="Enviar a consulta"></TextView>
 
     </RelativeLayout>
-
 
 </androidx.cardview.widget.CardView>

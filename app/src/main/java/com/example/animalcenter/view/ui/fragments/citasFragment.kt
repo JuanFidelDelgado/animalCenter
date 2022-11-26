@@ -50,6 +50,7 @@ class citasFragment : Fragment() {
         })
     }
 
+    //Codigo de programación da la barra de navegación
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val btn=view.findViewById<BottomNavigationView>(R.id.navigationBarCitas)

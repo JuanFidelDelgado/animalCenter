@@ -40,7 +40,6 @@ class repo {
                 val cita= citas(nombre!!, edad!!)
                 listData.add(cita)
             }
-
             mutableData.value=listData
         }
         return mutableData

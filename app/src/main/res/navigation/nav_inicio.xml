@@ -63,6 +63,9 @@
         <action
             android:id="@+id/action_mascotasFragment_to_registrarMascotaActivity"
             app:destination="@id/registrarMascotaActivity" />
+        <action
+            android:id="@+id/action_mascotasFragment_to_agendarCitaActivity"
+            app:destination="@id/agendarCitaActivity" />
     </fragment>
     <fragment
         android:id="@+id/citasFragment"
@@ -120,4 +123,9 @@
         android:name="com.example.animalcenter.view.ui.activities.RegistrarMascotaActivity"
         android:label="activity_registrar_mascota"
         tools:layout="@layout/activity_registrar_mascota" />
+    <activity
+        android:id="@+id/agendarCitaActivity"
+        android:name="com.example.animalcenter.view.ui.activities.AgendarCitaActivity"
+        android:label="activity_agendar_cita"
+        tools:layout="@layout/activity_agendar_cita" />
 </navigation>

@@ -34,7 +34,7 @@ class MascotasAdapter(private val context: Context, var clickListener: OnMascota
             itemView.findViewById<TextView>(R.id.raza).text=mascotas.raza
             itemView.findViewById<TextView>(R.id.edad).text=mascotas.edad
             Picasso.with(context).load(mascotas.foto).into(itemView.findViewById<ImageView>(R.id.foto))
-            val btnCita=itemView.findViewById<ImageButton>(R.id.btnCitas)
+            val btnCita=itemView.findViewById<TextView>(R.id.btnCita)
             btnCita.setOnClickListener {
                 action.onItemClick(mascotas, adapterPosition)
             }
