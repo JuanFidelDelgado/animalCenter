@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -20,6 +21,7 @@ import com.google.firebase.ktx.Firebase
 
 class citasFragment : Fragment() {
 
+    lateinit var btnAgendarCita: Button
     lateinit var recyclerCitas: RecyclerView
     lateinit var firebaseAuth: FirebaseAuth
     lateinit var adapter: CitasAdapter
@@ -65,6 +67,11 @@ class citasFragment : Fragment() {
                     true
                 }
             }
+        }
+
+        btnAgendarCita= view.findViewById(R.id.btnAgendarCita)
+        btnAgendarCita.setOnClickListener {
+            findNavController().navigate(R.id.action_citasFragment_to_agendarCitaActivity)
         }
     }
 

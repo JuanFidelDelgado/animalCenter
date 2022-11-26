@@ -83,6 +83,9 @@
         <action
             android:id="@+id/action_citasFragment_to_mapasFragment"
             app:destination="@id/mapasFragment" />
+        <action
+            android:id="@+id/action_citasFragment_to_agendarCitaActivity"
+            app:destination="@id/agendarCitaActivity" />
     </fragment>
     <fragment
         android:id="@+id/mapasFragment"

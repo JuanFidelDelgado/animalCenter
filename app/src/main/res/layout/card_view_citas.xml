@@ -16,7 +16,7 @@
         android:padding="15dp">
 
         <TextView
-            android:id="@+id/nombre"
+            android:id="@+id/nombreCita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -30,10 +30,10 @@
             >
         </TextView>
         <TextView
-            android:id="@+id/fecha"
+            android:id="@+id/fechaCita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/nombre"
+            android:layout_below="@id/nombreCita"
             android:textColor="@color/white"
             android:text="Fecha"
             android:textAlignment="center"
@@ -41,12 +41,12 @@
             android:textSize="20dp"
             >
         </TextView>
-        <!--
+
         <TextView
             android:id="@+id/hora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/fecha"
+            android:layout_below="@id/fechaCita"
             android:textColor="@color/white"
             android:text="Hora"
             android:textAlignment="center"
@@ -54,7 +54,6 @@
             android:textSize="20dp"
             >
         </TextView>
-        -->
 
     </RelativeLayout>
 

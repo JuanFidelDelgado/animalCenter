@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.animalcenter.R
@@ -25,8 +26,9 @@ class CitasAdapter(private val context: Context): RecyclerView.Adapter<CitasAdap
     inner class ViewHolder(ItemView:View): RecyclerView.ViewHolder(ItemView){
         //Esta funcion trae de la BD la información
         fun binWeb(cita: citas){
-            itemView.findViewById<TextView>(R.id.nombre).text=cita.nombre
-            itemView.findViewById<TextView>(R.id.fecha).text=cita.edad
+            itemView.findViewById<TextView>(R.id.txtNombreMascota).text=cita.nombreCita
+            itemView.findViewById<TextView>(R.id.txtFechaCita).text=cita.fechaCita
+            itemView.findViewById<TextView>(R.id.txtHoraCita).text=cita.horaCita
         }
     }
 

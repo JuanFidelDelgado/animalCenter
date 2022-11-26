@@ -19,7 +19,7 @@ class repo {
                 val raza= document.getString("raza")
                 val edad= document.getString("edad")
                 val foto= document.getString("foto")
-                val mascota= mascotas(nombre!!, especie!!, raza!!, edad!!, foto!!)
+                val mascota= mascotas(nombre!!, especie!!, raza!!, edad!!)
                 listData.add(mascota)
             }
 
@@ -36,8 +36,9 @@ class repo {
             val listData= mutableListOf<citas>()
             for(document in result){
                 val nombre= document.getString("nombre")
-                val edad= document.getString("edad")
-                val cita= citas(nombre!!, edad!!)
+                val fechaCita= document.getString("fechaCita")
+                val horaCita= document.getString("horaCita")
+                val cita= citas(nombre!!, fechaCita!!, horaCita!!)
                 listData.add(cita)
             }
             mutableData.value=listData

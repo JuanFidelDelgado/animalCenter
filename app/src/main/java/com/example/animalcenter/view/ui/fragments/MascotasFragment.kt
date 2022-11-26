@@ -26,7 +26,6 @@ class MascotasFragment : Fragment(), OnMascotasItemClickListener {
     lateinit var firebaseAuth: FirebaseAuth
     lateinit var adapter: MascotasAdapter
     lateinit var btnAdicionarMascota: Button
-    lateinit var btnAgendarCita: Button
     val database: FirebaseFirestore= FirebaseFirestore.getInstance()
     private val viewModel by lazy {ViewModelProvider(this).get(mascotasViewModel::class.java)}
 
@@ -73,10 +72,6 @@ class MascotasFragment : Fragment(), OnMascotasItemClickListener {
             findNavController().navigate(R.id.action_mascotasFragment_to_registrarMascotaActivity)
         }
 
-        btnAgendarCita= view.findViewById(R.id.btnAgendarCita)
-        btnAgendarCita.setOnClickListener {
-            findNavController().navigate(R.id.action_mascotasFragment_to_agendarCitaActivity)
-        }
     }
 
 

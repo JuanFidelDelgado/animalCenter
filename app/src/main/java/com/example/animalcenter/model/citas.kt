@@ -1,6 +1,7 @@
 package com.example.animalcenter.model
 
 data class citas(
-    val nombre: String,
-    val edad: String
+    val nombreCita: String,
+    val fechaCita: String,
+    val horaCita: String
     )

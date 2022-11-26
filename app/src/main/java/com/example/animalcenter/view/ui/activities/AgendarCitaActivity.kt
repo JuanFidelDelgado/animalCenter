@@ -12,15 +12,17 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class AgendarCitaActivity : AppCompatActivity() {
 
-    lateinit var btnAgendarCita: Button
     val firebaseFirestore: FirebaseFirestore= FirebaseFirestore.getInstance()
+    lateinit var nombreMascota: EditText
     lateinit var fechaCita: EditText
     lateinit var horaCita: EditText
+    lateinit var btnAgendarCita: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agendar_cita)
 
+        nombreMascota=findViewById(R.id.txtNombreMascota)
         fechaCita=findViewById(R.id.txtFechaCita)
         horaCita=findViewById(R.id.txtHoraCita)
         btnAgendarCita=findViewById(R.id.btnAgendarCita)

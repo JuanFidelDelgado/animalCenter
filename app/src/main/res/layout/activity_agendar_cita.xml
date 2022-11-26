@@ -19,7 +19,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="164dp"
         android:fontFamily="@font/playfairdisplayregular"
         android:text="Agendar cita"
         android:textAlignment="center"
@@ -29,136 +29,51 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp"></TextView>
 
-    <TextView
-        android:id="@+id/txtPaciente"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:background="@color/color1"
-        android:ems="10"
-        android:fontFamily="@font/playfairdisplayregular"
-        android:hint="Paciente"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageLogo"
-        tools:ignore="MissingConstraints"></TextView>
 
-
-    <!--
-    <EditText
-        android:id="@+id/txtApellidosRegistro"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="360dp"
-        android:background="@color/color1"
-        android:ems="10"
-        android:fontFamily="@font/playfairdisplayregular"
-        android:hint="  Apellidos"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageLogo"
-        tools:ignore="MissingConstraints">
-    </EditText>
 
     <EditText
-        android:id="@+id/txtCelularRegistro"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/txtNombreMascota"
         android:layout_width="380dp"
         android:layout_height="50dp"
-        android:layout_marginTop="420dp"
-        android:background="@color/color1"
-        android:ems="10"
-        android:fontFamily="@font/playfairdisplayregular"
-        android:hint="  Celular"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageLogo"
-        tools:ignore="MissingConstraints">
-    </EditText>
-
-    <EditText
-        android:id="@+id/txtEmailRegistro"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="480dp"
-        android:background="@color/color1"
-        android:ems="10"
-        android:fontFamily="@font/playfairdisplayregular"
-        android:hint="  Email"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageLogo"
-        tools:ignore="MissingConstraints">
-    </EditText>
-
-    <EditText
-        android:id="@+id/txtDireccionRegistro"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="540dp"
-        android:background="@color/color1"
-        android:ems="10"
-        android:fontFamily="@font/playfairdisplayregular"
-        android:hint="  Dirección"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageLogo"
-        tools:ignore="MissingConstraints">
-    </EditText>
-
-    <EditText
-        android:id="@+id/txtContrasenaRegistro"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="600dp"
-        android:background="@color/color1"
-        android:ems="10"
-        android:fontFamily="@font/playfairdisplayregular"
-        android:hint="  Contraseña"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageLogo"
-        app:endIconMode="password_toggle"
-        tools:ignore="MissingConstraints">
-    </EditText>
--->
-
-    <EditText
-        android:id="@+id/txtFechaCita"
-        android:text="Fecha cita"
-        android:layout_width="200dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="Nombre mascota"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPaciente"
-        android:background="@color/color1"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtFechaCita"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color1"
+        android:ems="10"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="Fecha cita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreMascota" />
 
     <EditText
         android:id="@+id/txtHoraCita"
-        android:text="Hora Cita"
-        android:layout_width="170dp"
-        android:layout_height="210dp"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
+        android:background="@color/color1"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:hint="Hora cita"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPaciente"
-        android:background="@color/color1"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaCita" />
 
     <Button
         android:id="@+id/btnAgendarCita"
@@ -176,7 +91,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHoraCita"
-        tools:ignore="MissingConstraints"/>
+        android:layout_marginBottom="50dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
