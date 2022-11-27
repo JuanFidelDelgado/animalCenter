@@ -41,7 +41,6 @@ class MascotasFragment : Fragment(), OnMascotasItemClickListener {
         recyclerMas.adapter=adapter
         observeData()
         return view
-
     }
 
     fun observeData(){

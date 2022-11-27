@@ -21,7 +21,6 @@ class PerfilAdapter: RecyclerView.Adapter<PerfilAdapter.ViewHolder>() {
         var itemNombres: TextView
         var itemApellidos: TextView
         var itemCelular: TextView
-        var itemEmail: TextView
         var itemDireccion: TextView
 
         init {
@@ -29,7 +28,6 @@ class PerfilAdapter: RecyclerView.Adapter<PerfilAdapter.ViewHolder>() {
             itemNombres=ItemView.findViewById(R.id.nombres)
             itemApellidos=ItemView.findViewById(R.id.apellidos)
             itemCelular=ItemView.findViewById(R.id.celular)
-            itemEmail=ItemView.findViewById(R.id.email)
             itemDireccion=ItemView.findViewById(R.id.direccion)
         }
     }
@@ -46,7 +44,6 @@ class PerfilAdapter: RecyclerView.Adapter<PerfilAdapter.ViewHolder>() {
         viewHolder.itemNombres.text=nombres[i]
         viewHolder.itemApellidos.text=apellidos[i]
         viewHolder.itemCelular.text=celular[i]
-        viewHolder.itemEmail.text=email[i]
         viewHolder.itemDireccion.text=direccion[i]
 
     }

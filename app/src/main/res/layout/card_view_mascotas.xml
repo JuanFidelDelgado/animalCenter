@@ -25,12 +25,27 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
         </ImageView>
+
         <TextView
-            android:id="@+id/nombreCita"
+            android:id="@+id/lblNombreCita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/foto"
             android:layout_toRightOf="@+id/foto"
+            android:textColor="@color/white"
+            android:text="Nombre: "
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/nombreMascotaCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/lblNombreCita"
+            android:layout_toRightOf="@+id/lblNombreCita"
             android:textColor="@color/white"
             android:text="Nombre:"
             android:textAlignment="center"
@@ -38,13 +53,29 @@
             android:textSize="20dp"
             >
         </TextView>
+
         <TextView
-            android:id="@+id/especie"
+            android:id="@+id/lblEspecie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/foto"
             android:layout_toRightOf="@+id/foto"
-            android:layout_below="@id/nombreCita"
+            android:layout_below="@id/nombreMascotaCita"
+            android:textColor="@color/white"
+            android:text="Especie: "
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/especie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/lblEspecie"
+            android:layout_toRightOf="@+id/lblEspecie"
+            android:layout_below="@id/nombreMascotaCita"
             android:textColor="@color/white"
             android:text="Especie:"
             android:textAlignment="center"
@@ -52,12 +83,28 @@
             android:textSize="20dp"
             >
         </TextView>
+
         <TextView
-            android:id="@+id/raza"
+            android:id="@+id/lblRaza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/foto"
             android:layout_toRightOf="@+id/foto"
+            android:layout_below="@id/especie"
+            android:textColor="@color/white"
+            android:text="Raza: "
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/raza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/lblRaza"
+            android:layout_toRightOf="@+id/lblRaza"
             android:layout_below="@id/especie"
             android:textColor="@color/white"
             android:text="Raza:"
@@ -68,11 +115,26 @@
         </TextView>
 
         <TextView
-            android:id="@+id/edad"
+            android:id="@+id/lblEdad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/foto"
             android:layout_toRightOf="@+id/foto"
+            android:layout_below="@id/raza"
+            android:textColor="@color/white"
+            android:text="Edad: "
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/lblEdad"
+            android:layout_toRightOf="@+id/lblEdad"
             android:layout_below="@id/raza"
             android:textColor="@color/white"
             android:text="Edad:"
@@ -81,7 +143,7 @@
             android:textSize="20dp"
             >
         </TextView>
-
+<!--
         <TextView
             android:id="@+id/btnCita"
             android:layout_width="wrap_content"
@@ -92,6 +154,7 @@
             android:background="@color/color3"
             android:src="@drawable/ic_cita"
             android:text="Enviar a consulta"></TextView>
+-->
 
     </RelativeLayout>
 

@@ -36,14 +36,14 @@
         android:textColor="@color/color3"
         >
     </TextView>
-<!--
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerviewmas"
+        android:id="@+id/recyclerviewperfil"
         android:layout_width="match_parent"
         android:layout_height="425dp"
         android:layout_marginTop="250dp">
     </androidx.recyclerview.widget.RecyclerView>
--->
+
     <ImageView
         android:id="@+id/fotoPerfil"
         android:layout_width="match_parent"

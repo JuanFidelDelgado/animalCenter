@@ -27,6 +27,7 @@ class AgendarCitaActivity : AppCompatActivity() {
         horaCita=findViewById(R.id.txtHoraCita)
         btnAgendarCita=findViewById(R.id.btnAgendarCita)
         val cita= hashMapOf(
+            "nombreMascota" to nombreMascota,
             "fechaCita" to fechaCita,
             "horaCita" to horaCita
 

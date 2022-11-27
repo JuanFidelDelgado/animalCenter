@@ -1,5 +1,6 @@
 package com.example.animalcenter.view.ui.fragments
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -31,6 +32,7 @@ class PerfilFragment : Fragment() {
         firebaseAuth=Firebase.auth
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,

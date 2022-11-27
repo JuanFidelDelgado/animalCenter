@@ -9,6 +9,8 @@ import com.example.animalcenter.R
 import com.example.animalcenter.model.mascotas
 //import io.grpc.Context
 import android.content.Context
+import android.widget.ImageView
+import com.squareup.picasso.Picasso
 
 class MascotasAdapter(private val context: Context, var clickListener: OnMascotasItemClickListener): RecyclerView.Adapter<MascotasAdapter.ViewHolder>(){
 
@@ -25,15 +27,16 @@ class MascotasAdapter(private val context: Context, var clickListener: OnMascota
 
     inner class ViewHolder(ItemView: View): RecyclerView.ViewHolder(ItemView) {
         fun binWeb(mascotas: mascotas, action: OnMascotasItemClickListener){
-            itemView.findViewById<TextView>(R.id.nombreCita).text=mascotas.nombre
+            itemView.findViewById<TextView>(R.id.nombreMascotaCita).text=mascotas.nombre
             itemView.findViewById<TextView>(R.id.especie).text=mascotas.especie
             itemView.findViewById<TextView>(R.id.raza).text=mascotas.raza
             itemView.findViewById<TextView>(R.id.edad).text=mascotas.edad
-            //Picasso.with(context).load(mascotas.foto).into(itemView.findViewById<ImageView>(R.id.foto))
+            Picasso.with(context).load(mascotas.foto).into(itemView.findViewById<ImageView>(R.id.foto))
+            /*
             val btnCita=itemView.findViewById<TextView>(R.id.btnCita)
             btnCita.setOnClickListener {
                 action.onItemClick(mascotas, adapterPosition)
-            }
+            }*/
         }
     }
 

@@ -9,12 +9,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.animalcenter.R
 import com.example.animalcenter.model.citas
+import com.example.animalcenter.model.usuarios
 
 class CitasAdapter(private val context: Context): RecyclerView.Adapter<CitasAdapter.ViewHolder>() {
 
     private var citasLista= mutableListOf<citas>()
 
-    fun setListData(data:MutableList<citas>){
+    fun setListData(data: MutableList<citas>){
         citasLista=data
     }
 
@@ -26,9 +27,9 @@ class CitasAdapter(private val context: Context): RecyclerView.Adapter<CitasAdap
     inner class ViewHolder(ItemView:View): RecyclerView.ViewHolder(ItemView){
         //Esta funcion trae de la BD la información
         fun binWeb(cita: citas){
-            itemView.findViewById<TextView>(R.id.txtNombreMascota).text=cita.nombreCita
-            itemView.findViewById<TextView>(R.id.txtFechaCita).text=cita.fechaCita
-            itemView.findViewById<TextView>(R.id.txtHoraCita).text=cita.horaCita
+            itemView.findViewById<TextView>(R.id.nombreMascotaCita).text=cita.nombre
+            itemView.findViewById<TextView>(R.id.fechaCita).text=cita.fechaCita
+            itemView.findViewById<TextView>(R.id.horaCita).text=cita.horaCita
         }
     }
 
